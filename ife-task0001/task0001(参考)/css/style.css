@@ -1,0 +1,200 @@
+.center1 {
+	width: 960px;
+	min-height: 100px;
+	margin: 0 auto;
+	background-color: #f00;
+}
+.center2-wrapper {
+	width: 960px;
+	min-height: auto;
+	position: relative;
+	left: 50%;
+}
+.center2 {
+	width: 960px;
+	min-height: 100px;
+	position: relative;
+	left: -50%;
+	background-color: #f00;
+
+}
+/*圆角矩形*/
+.radiusDiv-wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+.radius-div{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.radius-div p{
+	padding: 5px 10px;
+}
+.rtop {
+	background-color: #fff;
+}
+.rtop div{
+	min-height: 1px;
+}
+.r1 {
+	margin: 0 3px;
+	background-color: #000;
+}
+.r2 {
+	margin: 0 2px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.r3 {
+	margin: 0 1px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.r4 {
+	margin: 0 1px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+
+
+/*两列自适应布局*/
+.container {
+	overflow: auto;
+	margin: 0 30px;	 
+}
+.div-a {
+	width: 200px;
+	min-height: 100px;
+	float: left;
+	background-color: #711;
+}
+.div-b {
+	width: 100%;
+	min-height: 100px;
+	padding-left: 200px;
+	background-color: #171;
+}
+
+.rela-wrapper {
+	position: relative;	 
+	margin: 0 30px;
+	overflow: hidden;
+}
+.rela-wrapper .aside {
+	width:200px;
+	min-height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #171;
+}
+.rela-wrapper .main{
+	width:100%;
+	min-height: 100px;
+	padding-left: 200px;
+	background-color: #711;
+}
+/*三列圣杯布局,但不知道为什么，自己这里设置负边距之后，不需要调整两个侧边栏为relative就是正确的*/
+.q4-1 {
+	margin: 0 30px;	
+	overflow: auto;
+}
+.q4-1 .main-content {
+	width:100%;
+	background: #900;
+	min-height: 100px;
+	float: left;
+	padding-left: 200px;
+	padding-right:150px;
+}
+.q4-1 .side {
+	width: 200px;
+	min-height: 100px;
+	background-color: #090;
+	float: left;
+	margin-left: -100%;
+}
+.q4-1 .sub {
+	width: 150px;
+	min-height: 100px;
+	background-color: #009;
+	float: left;
+	margin-left: -150px;
+}
+
+/*三列双飞翼布局*/
+.q4-2 {
+	margin: 0 30px;
+	overflow: hidden;
+}
+.q4-2 .main-wrapper {
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	background-color: #600;
+}
+.q4-2 .main-content {
+	margin-left: 200px;
+	margin-right: 150px;
+}
+.q4-2 .side {
+	width: 200px;
+	min-height: 150px;
+	float: left;
+	margin-left: -100%;
+	background-color: #060;
+}
+.q4-2 .sub {
+	width: 150px;
+	min-height: 150px;
+	float: left;
+	margin-left: -150px;
+	background-color: #006;
+}
+
+
+.q4-3 {
+	margin: 0 30px;
+	overflow: auto;
+	position: relative;
+}
+.q4-3 .main-content {
+	width: 100%;
+	min-height: 100px;
+	background-color: #080;
+	padding-left: 200px;
+	padding-right: 150px;
+}
+.q4-3 .side {
+	width: 200px;
+	min-height: 150px;
+	background-color: #800;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.q4-3 .sub {
+	width: 150px;
+	min-height: 150px;
+	background-color: #008;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*实现浮动网格的布局*/
+.grid-wrapper {
+	margin: 0 30px;
+	height: auto;
+	background-color: #e00;
+	overflow: auto;
+}
+.grid-wrapper .item {
+	width: 300px;
+	min-height: 100px;
+	background-color: #00e;
+	margin: 10px 5px;
+	float: left;
+}

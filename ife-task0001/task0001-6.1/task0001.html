@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task0001(marco)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/task0001.css">
+</head>
+<body>
+	<h1>题目1</h1>
+	<p>用两种方法来实现一个背景色为红色、宽度为960px的div在浏览器中居中</p>
+	<h3>方法1:</h3>
+	<p>margin:auto</p>
+	<div class="center1">第一个居中容器</div>
+	<h3>方法2:</h3>
+	<p>两层容器，相对(绝对)定位，负left</p>
+	<div class="center2-container">
+		<div class="center2">
+			第二个居中容器
+		</div>
+	</div>
+	<h1>题目2</h1>
+	<p>在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形</p>
+	<h3>方法1:</h3>
+	<p>采用多层块,margin渐大，模拟逼近圆角</p>
+	<div class="radius-container">
+		<div class="r1234">
+			<div class="r4"></div>
+			<div class="r3"></div>
+			<div class="r2"></div>
+			<div class="r1"></div>
+		</div>
+		<div class="main-box">
+			<p>随着文字增加，高度逐渐升高，撑开容器，而r1~r4若未设置高度，则为0px，在此设置min-height：1px，实现1像素渐变。marcomarcomarcomarcomarcomarcomarcomarco</p>
+		</div>
+		<div class="r1234">
+			<div class="r1"></div>
+			<div class="r2"></div>
+			<div class="r3"></div>
+			<div class="r4"></div>
+		</div>
+	</div>
+	<h1>题目3</h1>
+	<p>用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化 </p>
+	<h3>方法1：</h3>
+	<p>浮动布局</p>
+	<div class="div-container1">
+		<div class="div1">定宽</div>
+		<div class="div2">随浏览器变化</div>
+	</div>
+	<h3>方法2：</h3>
+	<p>相对布局</p>
+	<div class="div-container2">
+		<div class="div3">定宽</div>
+		<div class="div4">随浏览器变化</div>
+	</div>
+	<h1>题目4</h1>
+	<p>用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化</p>
+	<h3>方法1：</h3>
+	<p>浮动布局</p>
+	<div class="div-container3">
+		<div class="div5">定宽</div>
+		<div class="div6">定宽</div>
+		<div class="div7">随浏览器变化</div>
+	</div>
+	<h3>方法2：</h3>
+	<p>相对布局</p>
+	<div class="div-container4">
+		<div class="div8">定宽</div>
+		<div class="div9">定宽</div>
+		<div class="div10">随浏览器变化</div>
+	</div>
+	<h1>题目5</h1>
+	<p>实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化 </p>
+	<div class="div-container5">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</div>
+</body>
+</html>

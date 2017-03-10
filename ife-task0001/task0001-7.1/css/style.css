@@ -1,0 +1,481 @@
+*{
+	margin: 0 ;
+	padding: 0;
+}
+.container{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+/*///////////////////index/////////////////////*/
+/*top-nav*/
+.top-nav{
+	width: 100%;
+	min-width: 980px;
+	height: 80px;
+	background-color: #522a5c;
+	position: relative;
+}
+.top-nav>.container{
+	height: 80px;
+}
+.my-logo{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 5px;     
+ }
+.nav-menu{
+	position: absolute;
+	right: 0;
+ 	bottom: 14px;         
+}
+.nav-item{
+	float: left;   				 /*不用display:inline-block,会产生行内元素的默认边距*/
+}
+.nav-item a{
+	color: white;
+	font-size: 14px;
+	padding: 0 14px;			/*a标签设置内边距而不是li标签设置外边距，扩大链接的点击范围*/
+}
+.github-link{
+	position: absolute;
+	right: 10px;
+	bottom: -3px;
+}
+@media (max-width: 980px){
+	.github-link{
+		display: none;
+	}
+}
+/*banner*/
+.banner img{
+	width: 100%;
+	min-width: 980px;
+}
+.banner-info{
+	color: #fff;
+	width: 300px;
+	padding: 10px 10px 30px;
+	position: absolute;
+	right: 0;
+	bottom: 0;           /*父容器container没有被内容撑开，高度0，所以底边是banner图底边，所以设置bottom:0时在banner图上*/
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* W3C */
+}
+.banner-info h3{
+	font-size: 14px;
+	margin-bottom: 12px;
+	text-align: right;
+}
+.banner-info p{
+	font-size: 12px;
+	line-height: 150%;
+}
+/*正文*/
+.article{
+	width: 100%;
+	min-width: 980px;
+	background-color: #eee;
+	padding-bottom: 80px;
+}
+.article .container{
+	overflow: hidden;
+}
+.article1,.article2,.article3{
+	width: 320px;
+	height: 100%;
+	background-color: #fff;
+	padding: 10px 10px 25px 10px;
+	float: left;
+	margin-top: 10px;
+}
+.article2{
+	margin: 10px 10px 0px;
+}
+.article2,.article3{
+	padding-bottom: 900px;
+	margin-bottom: -900px;
+}
+.article p{
+	font-size: 12px;
+	line-height: 170%;
+	margin: 0 20px;
+	text-indent: 2em;             
+}
+.article img{
+	overflow: hidden;
+	margin-bottom: 15px;    
+}
+/*introduce*/
+.introduce{
+	text-align: center;
+	width: 600px;
+	margin: 0 auto 100px;
+}
+.introduce img{
+	width: 160px;
+	height: 160px;
+	border-radius:80px;
+	margin:-50px 0 50px;
+}
+.introduce h3{
+	font-size: 20px;
+	font-family: "Century Gothic";
+}
+.introduce p{
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 200%;
+	text-align: left;              /*抵消内容居中的影响*/
+	margin-top: 30px;
+}
+/*footer*/
+.bottom-nav,footer{
+	width: 100%;
+	min-width: 980px;
+	background-color: #000;
+}
+.bottom-nav{
+	height: 30px;
+	border-bottom: #555 1px solid;
+	text-align: center;
+}
+.bottom-nav-menu{
+	display: inline-block;
+}
+.bottom-nav-item{
+	float: left;
+}
+.bottom-nav a{
+	color: white;
+	padding: 0 10px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.link-list{
+	float: left;
+	margin:0 50px 50px;
+}
+.link-list h4{
+	color: grey;
+	font-size: 16px;
+	margin: 50px 0;
+}
+.link-list a{
+	font-size: 14px;
+	color: white;
+	line-height: 25px;
+}
+footer p{
+	color: #fff;
+	text-align: center;
+}
+footer img{
+	display: block;
+	margin: 10px auto 0;
+}
+/*///////////////////gallery/////////////////////*/
+.gallery{
+	width: 100%;
+	background-color: #eee;
+	min-width: 980px;
+}
+/*///tab-menu///*/
+.tab-menu{
+	margin-top: 20px;
+}
+.all{
+	border-top:  4px #522a5c solid;
+	border-bottom: 0px #eee solid !important;	
+}
+.tab-menu li{
+	height: 50px;
+	float: left;
+	font-size: 10px;
+	background-color: #fff;
+	padding: 15px 20px 20px;
+	border-right: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+}
+.tab-menu li:hover{
+	border-bottom: 0px #eee solid;
+}
+.javascript{
+	border-top:  4px #dfc6e6 solid;
+}
+.javascript:hover{
+	border-top:  4px #522a5c solid;
+}
+.UI{
+	border-top:  4px #d2a6ff solid;
+}
+.UI:hover{
+	border-top:  4px #5900b2 solid;
+}
+.framework{
+	border-top:  4px #ffa98c solid;
+}
+.framework:hover{
+	border-top:  4px #8c2300 solid;
+}
+.applications{
+	border-top:  4px #ffe188 solid;
+}
+.applications:hover{
+	border-top:  4px #d9a300 solid;
+}
+/*//////gallery-body///////*/
+.gallery-body{
+	float: left;
+	padding: 20px 15px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.gallery-body li{
+	margin: 0 5px 10px;
+}
+#figure-1st{
+	width: 330px;
+}
+figure{
+	width: 160px;
+	position: relative;
+}
+figcaption{
+	padding: 10px 10px 10px 45px;
+	color: #fff;
+}
+figcaption span{
+	float: left;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	display: inline-block;
+	border-radius: 50%;
+	border:1px #eee solid;
+	position: absolute;
+	left: 10px;
+}
+figcaption p{
+	font-size: 13px;
+	line-height: 200%;
+}
+.list{
+	float: left;
+}
+#figure-1st img{		
+	width: 100%;
+	height: auto;
+}
+.list img{
+	width: 100%;
+	height: 100px;
+}
+.bg-js{
+	background-color: #522a5c;
+}
+.bg-ui{
+	background-color: #5900b2;
+}
+.bg-fw{
+	background-color: #8c2300;
+}
+.bg-a{
+	background-color: #d9a300;
+}
+.more{
+	width: 710px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #fff;
+	text-align: center;
+	clear: both;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+/*///////////search////////////*/
+.search{
+	width: 260px;
+	height: 80px;
+	padding: 20px;
+	float: right;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.search-container input{
+	color: #dedede;
+	width: 170px;
+	height: 40px;
+	background-image: url(../img/search.jpg);
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	border: #dedede 1px solid;
+	float: left;
+}
+.search-container input:hover{
+	color: #000;	
+}
+.search a{
+	background-color: #dedede;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	float: left;
+}
+/*//////////rank//////////*/
+.rank{
+	width: 260px;
+	padding: 20px;
+	background-color: #fff;
+	float: right;
+}
+.rank li{
+	margin-top: 20px;
+}
+.rank span{
+	font-size: 14px;
+	color: white;
+	line-height: 20px;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #522a5c;
+	display: block;
+	float: left;
+}
+.rank h4{
+	font-size: 16px;
+	color: grey;
+}
+.rank p{
+	display: inline-block;
+	font-size: 10px;
+}
+.rankbar{
+	width: 100px;
+	height: 20px;
+	border: 1px #522a5c solid;
+	margin: 0 10px;
+	float: left;
+}
+.inner1,.inner2,.inner3,.inner4,.inner5{
+	height: 20px;
+	background-color: #522a5c;
+}
+.inner1{
+	width: 100%;
+}
+.inner2{
+	width: 85%;
+}
+.inner3{
+	width: 65%;
+}
+.inner4{
+	width: 40%;
+}
+.inner5{
+	width: 30%;
+}
+/*/////////////////////about//////////////////////////*/
+.about{
+	width: 100%;
+	background-color: #eee;
+	min-width: 980px;
+	padding-bottom: 20px;
+}
+.about .container{
+	background-color: #eee;
+	overflow: hidden;
+}
+.about>.container>ul{
+	margin-top: 100px;
+}
+.about li{
+	position: relative;
+	display: table;
+}
+#about-item1 img{
+	width: 180px;
+	border:10px solid #eee;
+	left: 400px;
+	top: -70px;
+}
+#about-item1 .about-title,#about-item1 .about-desc{
+	padding-top: 120px;
+}
+.about img{
+	width: 110px;
+	border:5px solid #eee;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: -60px;
+	left: 435px;
+}
+.about-title{
+	width: 485px;
+	float: left;
+	background-color: #fff;
+	padding:60px 0 500px 50px;
+	margin-bottom: -500px;
+	margin-right: 5px;
+}
+.about-desc{
+	width: 485px;
+	line-height: 25px;
+	float: right;
+	background-color: #fff;
+	padding:60px 160px 580px 50px;      /*正极大padding-bottom和负极大margin-bottom互相抵消，填从整列。差值等于留白高度*/
+	margin-bottom: -500px;
+}
+.about-desc li{
+	display: block;
+	height: 30px;
+	margin:25px 0 25px -88px;
+}
+.about-time{
+	font-size: 9px;
+	color: grey;
+	background-color: #fff;
+	width: 70px;
+	height: 30px;
+	line-height: 20px;
+	text-align: center;
+	border:#eee 5px solid;
+	border-radius:10px;
+	display: block;
+	float: left;
+}
+.about h3{
+	font-size: 20px;
+	float: right;
+	margin-right: 50px;
+}
+.about p{
+	font-size: 14px;
+	text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

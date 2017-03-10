@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task0002</title>
+</head>
+<body>
+	<input type="text" name="num1" id="number1">
+	<input type="text" name="num2" id="number2">
+	<span id="result"></span>
+	<button id="addbtn"></button>
+	<script type="text/javascript">
+		function $(id) {							//封装了捕获id的方法，类似jq
+   			return document.getElementById(id);
+		}
+
+		function add(num1, num2) {
+		    return num1 + num2;
+		}
+
+		function renderResult(result) {
+		    $("result").innerHTML = result;
+		}
+
+		function addEventHandle() {
+		    var num1 = $("number1").value;
+		    var num2 = $("number2").value;
+		    var result = add(num1, num2);
+		    renderResult(result);
+		}
+
+		function initEvent() {
+		    $("addbtn").addEventListener("click", addEventHandle, false);
+		}
+
+		initEvent();
+	</script>
+</body>
+</html>
